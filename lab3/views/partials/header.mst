@@ -1,0 +1,23 @@
+<header>
+  <div class = "menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/courses">Courses</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="logoSiteName">
+        <img src="/images/python_logo.jpg" alt="logo" align="middle" height="80px">
+    </div>
+  </div>
+</header>

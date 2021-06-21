@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  {{> head }}
+  <body>
+    {{> header }}
+    <main>
+        <div class="pagination">
+          {{#PreviousPage}}
+             <span class="arrow">
+               <a href="/users?page={{page}}">Previous</a></span>
+            <input type="number" name="page" min="1" max="{{maxPage}}" style="width: 60px" value="{{curPage}}" placeholder="{{curPage}}" >
+            <label> {{maxPage}}</label>
+            <input type="submit" value="Go">
+            {{/PreviousPage}}
+
+            {{#NextPage}}
+             {{#page}}
+             <span class="arrow">
+             <a href="users?page={{page}}">next</a>
+          </span>
+             {{/page}}
+             {{^page}}
+              <span class="arrow"><p>next</p></span>
+             {{/page}}
+            {{/NextPage}}
+        </div>
+        <table>
+            <tr>
+                <td>LOGIN</td>
+                <td>FULLNAME</td>
+                <td>REGISTERED DATE</td>
+            </tr>
+            {{#usersPage}}
+            <tr>
+                <td><a href="/users/{{id}}">{{login}}</a></td>
+                <td><a href="/users/{{id}}">{{fullname}}</td>
+                <td>{{registeredAt}}</td>
+            </tr>
+            {{/usersPage}}
+            {{^usersPage}}
+            <tr>
+                <td colspan=3 style="text-align: center">No users.</td>
+            </tr>
+            {{/usersPage}}
+        </table>
+    </main>
+    {{> footer }}
+  </body>
+</html>

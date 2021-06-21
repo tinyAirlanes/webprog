@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  {{> head }}
+  <body>
+    {{> header }}
+    <main>
+      {{#user}}
+      {{#avaUrl}}
+        <img src={{avaUrl}} alt="User Avatar" class="user_img">
+      {{/avaUrl}}
+      {{^avaUrl}}
+        <div class="user_img"><span>No image</span></div>
+      {{/avaUrl}}
+      <span class="spanCenter">
+        <h1>ID:{{id}}</h1>
+        <h2>FULLNAME:{{fullname}}</h2>
+        <h3>LOGIN: {{login}}</h3>
+        <h3>REGISTERED DATE:{{registeredAt}}</h3>
+      </span>
+      <div class="bio">{{biography}}</div>
+      {{/user}}
+      {{^user}}
+        <img src="../public/images/error.png" alt="No such user" align="center" height="60px" class="error_img">
+        <p style="text-align: center;">No User</p>
+      {{/user}}
+    </main>
+    {{> footer }}
+  </body>
+</html>

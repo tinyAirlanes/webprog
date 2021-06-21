@@ -1,0 +1,191 @@
+body {
+  width: 960px;
+  margin-top: 10px;
+  padding: 5px;
+  border: solid 1px black;
+}
+
+.logoSiteName {
+  border: solid 1px black;
+  margin-right: auto;
+}
+
+.websiteName {
+  vertical-align: middle;
+  display: inline-block;
+  align-self: center;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.menu a {
+  color: rgb(1, 150, 250);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.menu a.current {
+  color: white;
+  background-color:rgb(0, 140, 255);
+}
+
+.menu a:hover {
+  background-color: #dddddd;
+}
+
+header, footer {
+  text-align: center;
+}
+
+body, table, .formCenter, footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formCenter {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+table {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 720px;
+}
+
+table a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+table a:hover {
+  color: #4b87d1;
+}
+
+td {
+  border: solid 1px black;
+  padding: 4px;
+}
+
+label {
+  background-color: #dddddd;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  width: 48px;
+  font-size: 19px;
+  margin-top: 5px;
+  text-align: left;
+} 
+
+.lbl {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+
+span.arrow {
+  vertical-align: middle; 
+  padding: 14px;
+}
+course_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  max-width: 250px;
+  height: 250px;
+}
+
+.error_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.spanCenter, .user_img {
+  text-align: center;
+}
+
+.newCourse{
+  margin-top: 25px;
+  margin-left: 2px;
+}
+
+input[type=number], input[type=file], input[type=text], [type=date] {
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+input[type=number], input[type=text], [type=date]  {
+  background-color: #f3f3f3;
+}
+
+input[type=submit] {
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+input.example {
+  border: none;
+  margin-left: 100px;
+}
+
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.bio {
+  margin: 12px;
+  padding: 6px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.user_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  max-width: 250px;
+  height: 250px;
+  line-height: 244px;
+}
+div img {
+  max-width: 232px; 
+  max-height: 235px;
+}
+p{
+  color:blue;
+}
